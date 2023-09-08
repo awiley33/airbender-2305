@@ -7,7 +7,7 @@ class Member
 
   def initialize(data)
     @name = data[:name]
-    @photo = data[:photoUrl]
+    @image = data[:photoUrl]
     @allies = data[:allies]
     @enemies = data[:enemies]
     @affiliations = data[:affiliation]

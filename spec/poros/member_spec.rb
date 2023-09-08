@@ -24,7 +24,7 @@ RSpec.describe Member do
 
     expect(member).to be_a Member
     expect(member.name).to eq("Azula")
-    expect(member.photo).to eq("https://vignette.wikia.nocookie.net/avatar/images/1/12/Azula.png/revision/latest?cb=20140905084941")
+    expect(member.image).to eq("https://vignette.wikia.nocookie.net/avatar/images/1/12/Azula.png/revision/latest?cb=20140905084941")
     expect(member.allies[0]).to eq("Ozai")
     expect(member.enemies[0]).to eq("Iroh")
     expect(member.affiliations).to eq(" Azula's team (formerly) Dai Li (formerly) Fire Nation Fire Nation Royal Family Fire Warriors Royal Fire Academy for Girls (formerly)")
