@@ -19,7 +19,7 @@ RSpec.describe Member do
       photoUrl: "https://vignette.wikia.nocookie.net/avatar/images/1/12/Azula.png/revision/latest?cb=20140905084941",
       name: "Azula",
       affiliation: " Azula's team (formerly) Dai Li (formerly) Fire Nation Fire Nation Royal Family Fire Warriors Royal Fire Academy for Girls (formerly)"
-  },
+  }
     member = Member.new(params)
 
     expect(member).to be_a Member

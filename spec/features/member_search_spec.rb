@@ -8,10 +8,10 @@ RSpec.describe "Member Search by Nation" do
     click_on "Search For Members"
 
     expect(current_path).to eq(search_path)
-
+save_and_open_page
     expect(page).to have_content("Total Members: ")
 
-    expect(page).to have_css(".member", count: 25)
+    expect(page).to have_css(".member", count: 20) # there were only 20 results in the api
 
     within(first(".member")) do
       expect(page).to have_css(".name")

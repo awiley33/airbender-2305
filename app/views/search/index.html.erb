@@ -1,0 +1,20 @@
+<h1>Search Results</h1>
+
+<h3>Total Members: <%= @members.count %></h3>
+
+<% @members[0..24].each do |member| %>
+  <p class="member"><h2 div="name"><%= member.name %></h2>
+  <p div="image"><img src=<%= member.image %>></p><br><br>
+
+  <p class="allies">Allies:</p>
+  <li><% member.allies.each do |ally| %>
+  <ul><%= ally %></ul>
+  <% end %></li>
+  <p class="enemies">Enemies:</p>
+  <li><% member.enemies.each do |enemy| %>
+  <ul><%= enemy %></ul>
+  <% end %></li>
+  <p class="affiliations">Affiliations:</p>
+  <p><%= member.affiliations %></p></p>
+  
+<% end %>

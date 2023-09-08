@@ -1,6 +1,6 @@
 class Member
   attr_reader :name,
-              :photo,
+              :image,
               :allies,
               :enemies,
               :affiliations
